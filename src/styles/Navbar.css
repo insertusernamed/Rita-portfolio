@@ -4,6 +4,7 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #1a1a1a;
+    color: #fff;
 }
 
 .nav-brand {
@@ -17,15 +18,15 @@
 }
 
 .nav-links a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #646cff;
+    /* color: #646cff; */
 }
 
 .nav-links a.active {
-    color: #646cff;
+    /* color: #646cff; */
 }
