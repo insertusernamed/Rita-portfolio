@@ -16,6 +16,9 @@ function Home() {
                 through Python, Java, and C/C. Skilled in implementing Microsoft
                 applications and Linux repositories.
             </p>
+            <div className="button-container">
+                <a href="">View Work</a> <a href=""></a>
+            </div>
         </section>
     );
 }
