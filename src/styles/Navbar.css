@@ -1,15 +1,15 @@
 .navbar {
-    background-color: rgb(33, 37, 41);  /* dark gray for primary-color */
-    font-weight: 500;  /* medium font weight */
+    background-color: rgb(33, 37, 41);  
+    font-weight: 500;  
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: rgb(255, 255, 255);  /* white */
+    color: rgb(255, 255, 255);  
     transition: ease-in-out 0.3s;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: rgb(13, 110, 253);  /* bootstrap primary blue for action-color */
+    color: rgb(13, 110, 253);  
 }
 
 /*LOGO*/
@@ -19,7 +19,7 @@ nav img {
 }
 
 nav img:hover {
-    border: 2px solid rgb(255, 255, 255);  /* white */
+    border: 2px solid rgb(255, 255, 255); 
     border-radius: 100em;
     transition: ease-in-out .4s;
     transform: scale(1.1);
