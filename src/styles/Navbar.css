@@ -1,32 +1,26 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: rgb(33, 37, 41);  /* dark gray for primary-color */
+    font-weight: 500;  /* medium font weight */
 }
 
-.nav-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
+.navbar-nav .nav-item .nav-link {
+    color: rgb(255, 255, 255);  /* white */
+    transition: ease-in-out 0.3s;
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(13, 110, 253);  /* bootstrap primary blue for action-color */
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/*LOGO*/
+nav img {
+    border: 2px solid transparent;
+    transition: ease-in-out 0.3s;
 }
 
-.nav-links a:hover {
-    /* color: #646cff; */
-}
-
-.nav-links a.active {
-    /* color: #646cff; */
+nav img:hover {
+    border: 2px solid rgb(255, 255, 255);  /* white */
+    border-radius: 100em;
+    transition: ease-in-out .4s;
+    transform: scale(1.1);
 }
