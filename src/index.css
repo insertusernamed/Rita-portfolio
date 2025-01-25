@@ -1,15 +1,27 @@
+:root {
+  /* CSS HEX */
+  --jet: #333333ff;
+  --turquoise: #48e5c2ff;
+  --seasalt: #fcfaf9ff;
+  --desert-sand: #f3d3bdff;
+  --davys-gray: #5e5e5eff;
+}
+
 body {
   margin: 0;
+  background-color: var(--jet);
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 main {
-  min-height: calc(100vh - 90px - 90px);
+  min-height: calc(100vh);
+  color: var(--seasalt);
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
@@ -21,14 +33,7 @@ main {
   padding-top: 86px; */
 }
 
-root {
-  /* CSS HEX */
-  --jet: #333333ff;
-  --turquoise: #48e5c2ff;
-  --seasalt: #fcfaf9ff;
-  --desert-sand: #f3d3bdff;
-  --davys-gray: #5e5e5eff;
-}
+
 
 .home {
   position: relative;
