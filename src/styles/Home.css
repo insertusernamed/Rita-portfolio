@@ -6,7 +6,7 @@
 
 }
 
-.hero-container{
+.hero-container {
     position: relative;
     padding: 40px;
     max-width: 800px;
@@ -16,6 +16,7 @@
     transition: transform 0.3s ease;
 
 }
+
 .home:hover {
     transform: scale(1.01);
 }
@@ -61,8 +62,8 @@
     transform: translateY(-2px);
 }
 
-.home::before,
-.home::after {
+.hero-container::before,
+.hero-container::after {
     content: '';
     position: absolute;
     width: 100px;
@@ -70,7 +71,7 @@
     pointer-events: none;
 }
 
-.home::before {
+.hero-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -88,7 +89,7 @@
             0 100%);
 }
 
-.home::after {
+.hero-container::after {
     content: "";
     position: absolute;
     bottom: 0;

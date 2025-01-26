@@ -1,0 +1,28 @@
+{
+    "skills": {
+        "programming": [
+            "Python",
+            "Java",
+            "C/C++",
+            "Bash"
+        ],
+        "automation": [
+            "PLC",
+            "SCADA",
+            "Arduino",
+            "Sensors"
+        ],
+        "tools": [
+            "Linux",
+            "Git",
+            "Microsoft Office",
+            "Docker"
+        ],
+        "engineering": [
+            "System Design",
+            "Electronics",
+            "Troubleshooting",
+            "Data Analysis"
+        ]
+    }
+}

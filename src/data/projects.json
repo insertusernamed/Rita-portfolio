@@ -1,0 +1,43 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Automation Control System",
+            "description": "Developed an industrial automation control system using PLCs and SCADA integration",
+            "technologies": [
+                "Python",
+                "C++",
+                "PLC",
+                "SCADA"
+            ],
+            "image": "https://placehold.co/600x400",
+            "github": "https://github.com"
+        },
+        {
+            "id": 2,
+            "title": "Linux System Monitor",
+            "description": "Created a system monitoring tool for Linux environments with real-time data analysis",
+            "technologies": [
+                "Python",
+                "Linux",
+                "Bash",
+                "Docker"
+            ],
+            "image": "https://placehold.co/600x400",
+            "github": "https://github.com"
+        },
+        {
+            "id": 3,
+            "title": "Embedded Systems Project",
+            "description": "Developed firmware for an electromechanical system with sensor integration",
+            "technologies": [
+                "C",
+                "Arduino",
+                "Electronics",
+                "Sensors"
+            ],
+            "image": "https://placehold.co/600x400",
+            "github": "https://github.com"
+        }
+    ]
+}
