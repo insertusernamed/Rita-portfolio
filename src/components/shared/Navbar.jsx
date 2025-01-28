@@ -3,7 +3,7 @@ import "../../styles/Navbar.css";
 function Nav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark  fixed-top">
-            <a className="navbar-brand ms-4" href="#hero">
+            <a className="navbar-brand ms-4" href="#home-section">
                 Rita
             </a>
             <button
