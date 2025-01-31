@@ -1,28 +1,76 @@
 {
     "skills": {
         "programming": [
-            "Python",
-            "Java",
-            "C/C++",
-            "Bash"
+            {
+                "name": "Python",
+                "icon": "SiPython"
+            },
+            {
+                "name": "Java",
+                "icon": "SiJava"
+            },
+            {
+                "name": "C/C++",
+                "icon": "SiCplusplus"
+            },
+            {
+                "name": "Bash",
+                "icon": "SiGnubash"
+            }
         ],
         "automation": [
-            "PLC",
-            "SCADA",
-            "Arduino",
-            "Sensors"
+            {
+                "name": "PLC",
+                "icon": "SiSiemens"
+            },
+            {
+                "name": "SCADA",
+                "icon": "SiIndustry"
+            },
+            {
+                "name": "Arduino",
+                "icon": "SiArduino"
+            },
+            {
+                "name": "Sensors",
+                "icon": "SiRaspberrypi"
+            }
         ],
         "tools": [
-            "Linux",
-            "Git",
-            "Microsoft Office",
-            "Docker"
+            {
+                "name": "Linux",
+                "icon": "SiLinux"
+            },
+            {
+                "name": "Git",
+                "icon": "SiGit"
+            },
+            {
+                "name": "Microsoft Office",
+                "icon": "SiMicrosoftoffice"
+            },
+            {
+                "name": "Docker",
+                "icon": "SiDocker"
+            }
         ],
         "engineering": [
-            "System Design",
-            "Electronics",
-            "Troubleshooting",
-            "Data Analysis"
+            {
+                "name": "System Design",
+                "icon": "SiSystemd"
+            },
+            {
+                "name": "Electronics",
+                "icon": "SiElectron"
+            },
+            {
+                "name": "Troubleshooting",
+                "icon": "SiStackoverflow"
+            },
+            {
+                "name": "Data Analysis",
+                "icon": "SiTableau"
+            }
         ]
     }
 }

@@ -8,7 +8,7 @@ function ParticleBackground() {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
         let particles = [];
-        const particleCount = 30;
+        const particleCount = 70;
         const connectionDistance = 150;
         const mouseRadius = 150;
 

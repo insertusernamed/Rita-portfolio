@@ -19,6 +19,12 @@
     backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 1.5rem;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
 }
 
 .skill-category h3 {
@@ -29,19 +35,77 @@
 .skills-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 1rem;
 }
 
 .skill-tag {
     background: var(--jet);
     color: var(--desert-sand);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
     font-size: 0.9rem;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease forwards;
+    animation-delay: calc(var(--index) * 0.1s);
 }
 
 .skill-tag:hover {
     transform: translateY(-2px);
     background: var(--davys-gray);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 1.2rem;
+    color: var(--turquoise);
+}
+
+.skill-name {
+    font-weight: 500;
+}
+
+.certifications-title {
+    margin-top: 4rem;
+}
+
+.certifications-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.certification-card {
+    background: rgba(51, 51, 51, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.certification-card h3 {
+    color: var(--turquoise);
+    margin-bottom: 1rem;
+}
+
+.pdf-preview {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 8px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

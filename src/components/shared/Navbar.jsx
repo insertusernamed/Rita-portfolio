@@ -29,6 +29,11 @@ function Nav() {
                             Projects
                         </a>
                     </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="#certifications">
+                            Certifications
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>

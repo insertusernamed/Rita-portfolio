@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import ParticleBackground from "./components/ParticleBackground";
 import Footer from "./components/shared/Footer";
+import Certifications from "./components/Certifications";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Home />
                 <Skills />
                 <Projects />
+                <Certifications />
             </main>
             <Footer />
         </div>
