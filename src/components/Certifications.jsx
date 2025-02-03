@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
 import { getCertifications } from "../utils/getCertifications";
+import { disableScroll, enableScroll } from "../utils/scrollLock";
+import ModalPortal from "./ModalPortal";
 import "../styles/Certifications.css";
 
 function Certifications() {
     const certifications = getCertifications();
     const [selectedCert, setSelectedCert] = useState(null);
+
+    useEffect(() => {
+        if (selectedCert) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
+
+        return () => enableScroll();
+    }, [selectedCert]);
 
     const breakpointColumns = {
         default: 3,
@@ -43,24 +55,29 @@ function Certifications() {
             </Masonry>
 
             {selectedCert && (
-                <div
-                    className="modal-overlay"
-                    onClick={() => setSelectedCert(null)}
-                >
+                <ModalPortal>
                     <div
-                        className="modal-content"
-                        onClick={(e) => e.stopPropagation()}
+                        className="modal-overlay"
+                        onClick={() => setSelectedCert(null)}
                     >
-                        <button
-                            className="modal-close"
-                            onClick={() => setSelectedCert(null)}
+                        <div
+                            className="modal-content"
+                            onClick={(e) => e.stopPropagation()}
                         >
-                            ×
-                        </button>
-                        <h3>{selectedCert.title}</h3>
-                        <img src={selectedCert.url} alt={selectedCert.title} />
+                            <button
+                                className="modal-close"
+                                onClick={() => setSelectedCert(null)}
+                            >
+                                ×
+                            </button>
+                            <h3>{selectedCert.title}</h3>
+                            <img
+                                src={selectedCert.url}
+                                alt={selectedCert.title}
+                            />
+                        </div>
                     </div>
-                </div>
+                </ModalPortal>
             )}
         </section>
     );

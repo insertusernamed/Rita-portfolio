@@ -1,38 +1,97 @@
 :root {
-  /* CSS HEX */
-  --jet: #333333ff;
-  --turquoise: #48e5c2ff;
-  --seasalt: #fcfaf9ff;
-  --desert-sand: #f3d3bdff;
-  --davys-gray: #5e5e5eff;
+    /* CSS HEX */
+    --jet: #333333ff;
+    --turquoise: #48e5c2ff;
+    --seasalt: #fcfaf9ff;
+    --desert-sand: #f3d3bdff;
+    --davys-gray: #5e5e5eff;
+
+    /* RGB Values for animations */
+    --turquoise-rgb: 72, 229, 194;
+    --desert-sand-rgb: 243, 211, 189;
+
+    /* Skills Section Colors */
+    --skill-card-bg: rgba(51, 51, 51, 0.8);
+    --skill-highlight: var(--turquoise);
+    --skill-text: var(--seasalt);
+    --skill-accent: var(--desert-sand);
+    --skill-hover: var(--davys-gray);
 }
 
 body {
-  margin: 0;
-  background: var(--jet);
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    background: var(--jet);
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
 }
 
 .app-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 main {
-  flex: 1;
-  width: 100%;
-  color: var(--seasalt);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 1;
+    flex: 1;
+    width: 100%;
+    color: var(--seasalt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Section Styles */
+section {
+    position: relative;
+    padding: 6rem 2rem;
+    border-bottom: 1px solid rgba(var(--turquoise-rgb), 0.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--turquoise);
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--turquoise);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--desert-sand);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 4rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }

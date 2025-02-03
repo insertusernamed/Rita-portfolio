@@ -1,9 +1,11 @@
 #home-section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 2rem;
+    border-bottom: none;
+    /* Remove border for home section */
 }
 
 @media (max-width: 968px) {

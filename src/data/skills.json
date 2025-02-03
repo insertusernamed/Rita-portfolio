@@ -1,76 +1,369 @@
 {
     "skills": {
-        "programming": [
-            {
-                "name": "Python",
-                "icon": "SiPython"
-            },
-            {
-                "name": "Java",
-                "icon": "SiJava"
-            },
-            {
-                "name": "C/C++",
-                "icon": "SiCplusplus"
-            },
-            {
-                "name": "Bash",
-                "icon": "SiGnubash"
-            }
-        ],
-        "automation": [
-            {
-                "name": "PLC",
-                "icon": "SiSiemens"
-            },
-            {
-                "name": "SCADA",
-                "icon": "SiIndustry"
-            },
-            {
-                "name": "Arduino",
-                "icon": "SiArduino"
-            },
-            {
-                "name": "Sensors",
-                "icon": "SiRaspberrypi"
-            }
-        ],
-        "tools": [
-            {
-                "name": "Linux",
-                "icon": "SiLinux"
-            },
-            {
-                "name": "Git",
-                "icon": "SiGit"
-            },
-            {
-                "name": "Microsoft Office",
-                "icon": "SiMicrosoftoffice"
-            },
-            {
-                "name": "Docker",
-                "icon": "SiDocker"
-            }
-        ],
-        "engineering": [
-            {
-                "name": "System Design",
-                "icon": "SiSystemd"
-            },
-            {
-                "name": "Electronics",
-                "icon": "SiElectron"
-            },
-            {
-                "name": "Troubleshooting",
-                "icon": "SiStackoverflow"
-            },
-            {
-                "name": "Data Analysis",
-                "icon": "SiTableau"
-            }
-        ]
+        "embedded": {
+            "title": "Embedded Systems",
+            "summary": "Specialized in real-time embedded systems and IoT solutions",
+            "projects": 15,
+            "years": 6,
+            "achievements": [
+                {
+                    "title": "Medical Device Architecture",
+                    "description": "Led development of Class II medical device architecture reducing system latency by 60%",
+                    "icon": "SiSpeedtest",
+                    "metrics": [
+                        {
+                            "value": "60%",
+                            "label": "Latency Reduction"
+                        },
+                        {
+                            "value": "99.99%",
+                            "label": "System Uptime"
+                        },
+                        {
+                            "value": "FDA",
+                            "label": "Compliance"
+                        }
+                    ]
+                },
+                {
+                    "title": "IoT Platform Development",
+                    "description": "Designed scalable IoT platform supporting 100k+ connected devices",
+                    "icon": "SiIotify",
+                    "metrics": [
+                        {
+                            "value": "100k+",
+                            "label": "Connected Devices"
+                        },
+                        {
+                            "value": "5ms",
+                            "label": "Response Time"
+                        }
+                    ]
+                },
+                {
+                    "title": "RTOS Optimization",
+                    "description": "Optimized RTOS scheduler improving system performance and reducing power consumption",
+                    "icon": "SiTimer",
+                    "metrics": [
+                        {
+                            "value": "40%",
+                            "label": "Power Reduction"
+                        },
+                        {
+                            "value": "30%",
+                            "label": "Task Switching"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "name": "STM32/ARM",
+                    "icon": "SiArm",
+                    "level": 95,
+                    "experience": "6+",
+                    "description": "Expert in ARM Cortex-M series microcontrollers and development tools",
+                    "keyProjects": [
+                        "Medical Monitor",
+                        "Industrial Gateway",
+                        "Smart Sensor Network"
+                    ],
+                    "expertise": [
+                        "Bare-metal Programming",
+                        "DMA & Peripheral Control",
+                        "Hardware Abstraction"
+                    ]
+                },
+                {
+                    "name": "RTOS",
+                    "icon": "SiRos",
+                    "level": 90,
+                    "experience": "5+",
+                    "description": "Advanced implementation of FreeRTOS and Zephyr RTOS",
+                    "keyProjects": [
+                        "Real-time Control System",
+                        "IoT Gateway",
+                        "Safety-Critical Application"
+                    ],
+                    "expertise": [
+                        "Task Scheduling",
+                        "Resource Management",
+                        "Inter-task Communication"
+                    ]
+                },
+                {
+                    "name": "Embedded Linux",
+                    "icon": "SiLinux",
+                    "level": 85,
+                    "experience": "4+",
+                    "description": "Custom Linux kernel development and BSP creation",
+                    "keyProjects": [
+                        "Custom Linux Distribution",
+                        "Device Driver Development",
+                        "Bootloader Customization"
+                    ]
+                },
+                {
+                    "name": "IoT Protocols",
+                    "icon": "SiMqtt",
+                    "level": 88,
+                    "experience": "5+",
+                    "description": "Implementation of industrial IoT communication protocols",
+                    "keyProjects": [
+                        "MQTT Broker",
+                        "ModBus Gateway",
+                        "OPC-UA Client"
+                    ],
+                    "expertise": [
+                        "MQTT",
+                        "ModBus",
+                        "OPC-UA"
+                    ]
+                }
+            ]
+        },
+        "systemEngineering": {
+            "title": "System Engineering",
+            "summary": "Expertise in system architecture and requirements engineering for safety-critical systems",
+            "projects": 8,
+            "years": 4,
+            "achievements": [
+                {
+                    "title": "Safety Certification",
+                    "description": "Led certification process for medical device achieving IEC 62304 compliance",
+                    "icon": "SiShield",
+                    "metrics": [
+                        {
+                            "value": "100%",
+                            "label": "Compliance Rate"
+                        },
+                        {
+                            "value": "6mo",
+                            "label": "Certification Time"
+                        }
+                    ]
+                },
+                {
+                    "title": "Requirements Optimization",
+                    "description": "Streamlined requirements management process reducing documentation time by 40%",
+                    "icon": "SiCheckmarx",
+                    "metrics": [
+                        {
+                            "value": "40%",
+                            "label": "Time Saved"
+                        },
+                        {
+                            "value": "250+",
+                            "label": "Requirements Managed"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "name": "Requirements Management",
+                    "icon": "SiConfluence",
+                    "level": 85,
+                    "experience": "4+",
+                    "description": "Expert in requirements engineering using DOORS and Confluence",
+                    "keyProjects": [
+                        "Medical Device Certification",
+                        "Automotive Safety Systems"
+                    ]
+                },
+                {
+                    "name": "V&V Process",
+                    "icon": "SiVerizon",
+                    "level": 80,
+                    "experience": "3+",
+                    "description": "Implementation of verification and validation processes for safety-critical systems",
+                    "keyProjects": [
+                        "ISO 26262 Compliance",
+                        "Test Strategy Development"
+                    ]
+                },
+                {
+                    "name": "FMEA/FTA",
+                    "icon": "SiMatrix",
+                    "level": 75,
+                    "experience": "3+",
+                    "description": "Risk analysis and safety assessment for complex systems",
+                    "keyProjects": [
+                        "Risk Assessment",
+                        "Safety Analysis"
+                    ]
+                }
+            ]
+        },
+        "development": {
+            "title": "Development Tools",
+            "summary": "Mastery of industry-standard development and debugging tools",
+            "projects": 15,
+            "years": 5,
+            "achievements": [
+                {
+                    "title": "CI/CD Pipeline",
+                    "description": "Implemented automated testing pipeline reducing deployment time by 65%",
+                    "icon": "SiGithubactions",
+                    "metrics": [
+                        {
+                            "value": "65%",
+                            "label": "Time Reduction"
+                        },
+                        {
+                            "value": "99%",
+                            "label": "Test Coverage"
+                        }
+                    ]
+                },
+                {
+                    "title": "Debug Efficiency",
+                    "description": "Created specialized debugging tools for embedded systems",
+                    "icon": "SiDebug",
+                    "metrics": [
+                        {
+                            "value": "75%",
+                            "label": "Debug Time Reduction"
+                        },
+                        {
+                            "value": "100+",
+                            "label": "Issues Resolved"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "name": "Git",
+                    "icon": "SiGit",
+                    "level": 88,
+                    "experience": "5+",
+                    "description": "Advanced version control and team collaboration",
+                    "keyProjects": [
+                        "Monorepo Management",
+                        "Git Flow Implementation"
+                    ]
+                },
+                {
+                    "name": "JTAG/GDB",
+                    "icon": "SiGnubash",
+                    "level": 85,
+                    "experience": "4+",
+                    "description": "Hardware-level debugging and system analysis",
+                    "keyProjects": [
+                        "Custom Debug Tools",
+                        "Performance Profiling"
+                    ]
+                }
+            ]
+        },
+        "programming": {
+            "title": "Programming",
+            "summary": "Full-stack development with focus on embedded and automation",
+            "projects": 20,
+            "years": 6,
+            "achievements": [
+                {
+                    "title": "Automation Framework",
+                    "description": "Developed company-wide test automation framework",
+                    "icon": "SiPython",
+                    "metrics": [
+                        {
+                            "value": "85%",
+                            "label": "Test Automation"
+                        },
+                        {
+                            "value": "3000+",
+                            "label": "Tests Automated"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "name": "Python",
+                    "icon": "SiPython",
+                    "level": 90,
+                    "experience": "5+",
+                    "description": "Automation, data analysis, and tool development",
+                    "keyProjects": [
+                        "Test Framework",
+                        "Data Analysis Pipeline"
+                    ]
+                },
+                {
+                    "name": "MATLAB",
+                    "icon": "SiMaterialdesign",
+                    "level": 82,
+                    "experience": "4+",
+                    "description": "Signal processing and algorithm development",
+                    "keyProjects": [
+                        "Signal Processing",
+                        "Control Systems"
+                    ]
+                },
+                {
+                    "name": "SQL",
+                    "icon": "SiMysql",
+                    "level": 75,
+                    "experience": "3+",
+                    "description": "Knowledgeable in SQL for database management and querying"
+                }
+            ]
+        },
+        "hardware": {
+            "title": "Hardware Design",
+            "summary": "PCB design and electronic system integration",
+            "projects": 10,
+            "years": 4,
+            "achievements": [
+                {
+                    "title": "Cost Reduction",
+                    "description": "Redesigned PCB reducing production costs by 30%",
+                    "icon": "SiAltiumdesigner",
+                    "metrics": [
+                        {
+                            "value": "30%",
+                            "label": "Cost Reduction"
+                        },
+                        {
+                            "value": "10k+",
+                            "label": "Units Produced"
+                        }
+                    ]
+                }
+            ],
+            "items": [
+                {
+                    "name": "Altium Designer",
+                    "icon": "SiAltiumdesigner",
+                    "level": 85,
+                    "experience": "4+",
+                    "description": "Professional PCB design and layout",
+                    "keyProjects": [
+                        "IoT Sensor Board",
+                        "Power Management System"
+                    ]
+                },
+                {
+                    "name": "AutoCAD",
+                    "icon": "SiAutodesk",
+                    "level": 80,
+                    "experience": "3+",
+                    "description": "Mechanical design and documentation",
+                    "keyProjects": [
+                        "Enclosure Design",
+                        "Manufacturing Documentation"
+                    ]
+                },
+                {
+                    "name": "SolidWorks",
+                    "icon": "SiSolidworks",
+                    "level": 78,
+                    "experience": "3+",
+                    "description": "Skilled in 3D modeling and simulation using SolidWorks"
+                }
+            ]
+        }
     }
 }

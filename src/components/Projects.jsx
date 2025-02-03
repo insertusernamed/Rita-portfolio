@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import "../styles/Projects.css";
 import projectsData from "../data/projects.json";
 import { loadProjectMedia } from "../utils/mediaLoader";
+import ModalPortal from "./ModalPortal";
 
 function Projects() {
     const [projects, setProjects] = useState([]);
     const [selectedProject, setSelectedProject] = useState(null);
     const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
-    const [debug, setDebug] = useState({});
+    const [setDebug] = useState({});
 
     useEffect(() => {
         const loadProjects = async () => {
@@ -174,59 +175,67 @@ function Projects() {
             </div>
 
             {selectedProject && (
-                <div
-                    className="media-modal"
-                    onClick={closeModal}
-                    role="dialog"
-                    aria-modal="true"
-                >
+                <ModalPortal>
                     <div
-                        className="modal-content"
-                        onClick={(e) => {
-                            if (e.target === e.currentTarget) {
-                                closeModal();
-                            }
-                            e.stopPropagation();
-                        }}
+                        className="media-modal"
+                        onClick={closeModal}
+                        role="dialog"
+                        aria-modal="true"
                     >
-                        <button className="close-button" onClick={closeModal}>
-                            &times;
-                        </button>
-                        <button
-                            className="nav-button prev"
-                            onClick={() => navigateMedia(-1)}
+                        <div
+                            className="modal-content"
+                            onClick={(e) => {
+                                if (e.target === e.currentTarget) {
+                                    closeModal();
+                                }
+                                e.stopPropagation();
+                            }}
                         >
-                            &lt;
-                        </button>
-                        <button
-                            className="nav-button next"
-                            onClick={() => navigateMedia(1)}
-                        >
-                            &gt;
-                        </button>
+                            <button
+                                className="close-button"
+                                onClick={closeModal}
+                            >
+                                &times;
+                            </button>
+                            <button
+                                className="nav-button prev"
+                                onClick={() => navigateMedia(-1)}
+                            >
+                                &lt;
+                            </button>
+                            <button
+                                className="nav-button next"
+                                onClick={() => navigateMedia(1)}
+                            >
+                                &gt;
+                            </button>
 
-                        {selectedProject.media[currentMediaIndex].type ===
-                        "video" ? (
-                            <video
-                                src={
-                                    selectedProject.media[currentMediaIndex].src
-                                }
-                                controls
-                                className="modal-media"
-                            />
-                        ) : (
-                            <img
-                                src={
-                                    selectedProject.media[currentMediaIndex].src
-                                }
-                                alt={
-                                    selectedProject.media[currentMediaIndex].alt
-                                }
-                                className="modal-media"
-                            />
-                        )}
+                            {selectedProject.media[currentMediaIndex].type ===
+                            "video" ? (
+                                <video
+                                    src={
+                                        selectedProject.media[currentMediaIndex]
+                                            .src
+                                    }
+                                    controls
+                                    className="modal-media"
+                                />
+                            ) : (
+                                <img
+                                    src={
+                                        selectedProject.media[currentMediaIndex]
+                                            .src
+                                    }
+                                    alt={
+                                        selectedProject.media[currentMediaIndex]
+                                            .alt
+                                    }
+                                    className="modal-media"
+                                />
+                            )}
+                        </div>
                     </div>
-                </div>
+                </ModalPortal>
             )}
         </section>
     );
